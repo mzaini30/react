@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from '@reach/router'
-import css from './index.module.css'
+import css from './index.module.pcss'
 
 export default function({path}: {path: string}){
 	return <div className={css.wadah}>
