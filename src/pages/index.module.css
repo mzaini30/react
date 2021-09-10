@@ -1,0 +1,6 @@
+.wadah {
+	@apply p-5;
+}
+.teksBesar {
+	@apply text-2xl;
+}
