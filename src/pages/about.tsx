@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function({path}: {path: string}){
+export default function(){
 	document.title = 'About'
 	
 	return <div id="about">

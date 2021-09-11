@@ -1,8 +1,8 @@
-import React, {lazy} from 'react'
-import {Link} from '@reach/router'
+import React from 'react'
+import {Link} from 'react-router-dom'
 import './index.pcss'
 
-export default function({path}: {path: string}){
+export default function(){
 	document.title = 'Beranda'
 
 	return <div id='index'>
