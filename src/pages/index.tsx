@@ -1,10 +1,12 @@
-import React from 'react'
+import React, {lazy} from 'react'
 import {Link} from '@reach/router'
-import css from './index.module.pcss'
+import './index.pcss'
 
 export default function({path}: {path: string}){
-	return <div className={css.wadah}>
-		<h1 className={css.teksBesar}>Beranda</h1>
-		<p>Menuju ke <Link to='/about'>about</Link></p>
+	document.title = 'Beranda'
+
+	return <div id='index'>
+		<h1 className='teksBesar'>Beranda</h1>
+		<p>Menuju ke <Link to='/about' onMouseEnter={() => import('./about')}>about</Link></p>
 	</div>
 }
