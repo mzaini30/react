@@ -1,5 +1,12 @@
 # Template React
 
+## Library dan fitur
+
+- Windi
+- Vite
+- Reach Router
+- TypeScript
+
 ## Tutorial singkat
 
 ### Prefetch route
