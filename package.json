@@ -6,13 +6,16 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:android": "vite build --mode android --base /assets/ && node script/after-build.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vitejs/plugin-legacy": "^3.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router": "^6.4.5",
-    "react-router-dom": "^6.4.5"
+    "react-router-dom": "^6.4.5",
+    "terser": "^5.16.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
