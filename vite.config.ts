@@ -1,10 +1,9 @@
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import WindiCSS from "vite-plugin-windicss";
+import react from "@vitejs/plugin-react-swc";
 import Pages from "vite-plugin-pages";
 import legacy from "@vitejs/plugin-legacy";
 
-let plugins = [react(), WindiCSS(), Pages()];
+let plugins = [react(), Pages()];
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
